@@ -652,44 +652,6 @@ function blossom_recipe_is_brm_activated(){
     return class_exists( 'Blossom_Recipe_Maker' ) ? true : false;
 }
 
-if ( ! function_exists( 'blossom_recipe_fonts_url' ) ) :
-/**
- * Register Google fonts
- *
- * @return string Google fonts URL for the theme.
- */
-function blossom_recipe_fonts_url() {
-    $fonts_url = '';
-    $fonts     = array();
-    $subsets   = 'latin,latin-ext';
-
-    /* translators: If there are characters in your language that are not supported by Nunito Sans, translate this to 'off'. Do not translate into your own language. */
-    if ( 'off' !== _x( 'on', 'Nunito Sans: on or off', 'blossom-recipe' ) ) {
-        $fonts[] = 'Nunito Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
-    }
-
-    /* translators: If there are characters in your language that are not supported by Marcellus, translate this to 'off'. Do not translate into your own language. */
-    if ( 'off' !== _x( 'on', 'Marcellus: on or off', 'blossom-recipe' ) ) {
-        $fonts[] = 'Marcellus:';
-    }
-
-    $query_args = array(
-        'family' => urlencode( implode( '|', $fonts ) ),
-        'subset' => urlencode( $subsets ),
-    );
-
-    if ( $fonts ) {
-        $fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
-    }
-
-    if( get_theme_mod( 'ed_localgoogle_fonts', false ) ) {
-        $fonts_url = blossom_recipe_get_webfont_url( add_query_arg( $query_args, 'https://fonts.googleapis.com/css' ) );
-    }
-    
-    return esc_url_raw( $fonts_url );
-}
-endif;
-
 if ( ! function_exists( 'wp_body_open' ) ) :
     /**
      * Fire the wp_body_open action.
@@ -1128,3 +1090,23 @@ function blossom_recipe_get_page_template_url( $page_template ){
     return $url;    
 }
 endif;
+
+/**
+ * Checks if elementor is active or not
+*/
+function blossom_recipe_is_elementor_activated(){
+    return class_exists( 'Elementor\\Plugin' ) ? true : false; 
+}
+
+/**
+ * Checks if elementor has override that particular page/post or not
+*/
+function blossom_recipe_is_elementor_activated_post(){
+    if( blossom_recipe_is_elementor_activated() && is_singular() ){
+        global $post;
+        $post_id = $post->ID;
+        return \Elementor\Plugin::$instance->documents->get( $post_id )->is_built_with_elementor( $post_id ) ? true : false;
+    }else{
+        return false;
+    }
+}

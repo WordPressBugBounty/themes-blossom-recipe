@@ -8,7 +8,7 @@
 /**
  * Requiring customizer panels & sections
 */
-$blossom_recipe_panels = array( 'info', 'site', 'layout', 'general', 'footer', 'typography' );
+$blossom_recipe_panels = array( 'info', 'site', 'layout', 'general', 'footer', 'appearance', 'builder' );
 
 foreach( $blossom_recipe_panels as $p ){
     require get_template_directory() . '/inc/customizer/' . $p . '.php';

@@ -91,3 +91,10 @@ function blossom_recipe_ed_instagram($control){
 
     return false;
 }
+
+/**
+ * Customizer Builder activated or not
+*/
+function blossom_recipe_is_frontpage_builder_activated(){
+    return ( get_theme_mod( 'builder_types','customizer' ) == 'builder' ) ? true : false;    
+}

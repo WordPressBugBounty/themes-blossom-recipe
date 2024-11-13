@@ -59,6 +59,16 @@ require get_template_directory() . '/inc/widgets.php';
 require get_template_directory() . '/inc/metabox.php';
 
 /**
+ * Typography Functions
+ */
+require get_template_directory() . '/inc/typography.php';
+
+/**
+ * Dynamic Styles
+ */
+require get_template_directory() . '/css/style.php';
+
+/**
  * Plugin Recommendation
 */
 require get_template_directory() . '/inc/tgmpa/recommended-plugins.php';
@@ -90,3 +100,10 @@ if( blossom_recipe_is_delicious_recipe_activated() ){
  * Implement Local Font Method functions.
  */
 require get_template_directory() . '/inc/class-webfont-loader.php';
+
+/**
+ * Elementor Functions.
+ */
+if( blossom_recipe_is_elementor_activated() ){
+	require get_template_directory() . '/inc/elementor-compatibility.php';
+}

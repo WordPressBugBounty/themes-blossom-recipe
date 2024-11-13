@@ -163,22 +163,35 @@ function blossom_recipe_scripts() {
 	// Use minified libraries if SCRIPT_DEBUG is false
     $build  = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '/build' : '';
     $suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+    $builder = get_theme_mod('builder_types', 'customizer');
     
     if( blossom_recipe_is_woocommerce_activated() )
     wp_enqueue_style( 'blossom-recipe-woocommerce', get_template_directory_uri(). '/css' . $build . '/woocommerce' . $suffix . '.css', array(), BLOSSOM_RECIPE_THEME_VERSION );
     
-    wp_enqueue_style( 'owl-carousel', get_template_directory_uri(). '/css' . $build . '/owl.carousel' . $suffix . '.css', array(), '2.3.4' );
-    wp_enqueue_style( 'animate', get_template_directory_uri(). '/css' . $build . '/animate' . $suffix . '.css', array(), '3.5.2' );
+    if( $builder === 'customizer' && (is_front_page() || is_home()) ){
+        wp_enqueue_style( 'owl-carousel', get_template_directory_uri(). '/css' . $build . '/owl.carousel' . $suffix . '.css', array(), '2.3.4' );
+        wp_enqueue_style( 'animate', get_template_directory_uri(). '/css' . $build . '/animate' . $suffix . '.css', array(), '3.5.2' );
+    }
+
     if ( get_theme_mod( 'ed_localgoogle_fonts', false ) && ! is_customize_preview() && ! is_admin() && get_theme_mod( 'ed_preload_local_fonts', false ) ) {
         blossom_recipe_preload_local_fonts( blossom_recipe_fonts_url() );
     }
+
+    if ( blossom_recipe_is_elementor_activated_post() ) {
+        wp_enqueue_style( 'blossom-recipe-elementor', get_template_directory_uri() . '/css' . $build . '/elementor' . $suffix . '.css', array(), BLOSSOM_RECIPE_THEME_VERSION );
+    }
+
     wp_enqueue_style( 'blossom-recipe-google-fonts', blossom_recipe_fonts_url(), array(), null );
     wp_enqueue_style( 'blossom-recipe', get_stylesheet_uri(), array(), BLOSSOM_RECIPE_THEME_VERSION );
     
     wp_enqueue_script( 'all', get_template_directory_uri() . '/js' . $build . '/all' . $suffix . '.js', array( 'jquery' ), '6.1.1', true );
     wp_enqueue_script( 'v4-shims', get_template_directory_uri() . '/js' . $build . '/v4-shims' . $suffix . '.js', array( 'jquery', 'all' ), '6.1.1', true );
-	wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/js' . $build . '/owl.carousel' . $suffix . '.js', array( 'jquery' ), '2.3.4', true );
-    wp_enqueue_script( 'owlcarousel2-a11ylayer', get_template_directory_uri() . '/js' . $build . '/owlcarousel2-a11ylayer' . $suffix . '.js', array( 'jquery', 'owl-carousel' ), '0.2.1', true );
+	
+    if( $builder === 'customizer' && (is_front_page() || is_home()) ){
+        wp_enqueue_script( 'owl-carousel', get_template_directory_uri() . '/js' . $build . '/owl.carousel' . $suffix . '.js', array( 'jquery' ), '2.3.4', true );
+        wp_enqueue_script( 'owlcarousel2-a11ylayer', get_template_directory_uri() . '/js' . $build . '/owlcarousel2-a11ylayer' . $suffix . '.js', array( 'jquery', 'owl-carousel' ), '0.2.1', true );
+    }
+
 	wp_enqueue_script( 'blossom-recipe', get_template_directory_uri() . '/js' . $build . '/custom' . $suffix . '.js', array( 'jquery', 'masonry' ), BLOSSOM_RECIPE_THEME_VERSION, true );
     
     wp_enqueue_script( 'blossom-recipe-modal', get_template_directory_uri() . '/js' . $build . '/modal-accessibility' . $suffix . '.js', array( 'jquery' ), BLOSSOM_RECIPE_THEME_VERSION, true );

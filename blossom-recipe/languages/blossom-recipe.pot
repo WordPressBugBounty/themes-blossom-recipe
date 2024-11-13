@@ -2,16 +2,16 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Blossom Recipe 1.3.0\n"
+"Project-Id-Version: Blossom Recipe 1.3.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/blossom-recipe\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-06-06T09:47:43+00:00\n"
+"POT-Creation-Date: 2024-10-02T06:00:53+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
+"X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: blossom-recipe\n"
 
 #. Theme Name of the theme
@@ -380,6 +380,7 @@ msgid "Font Family"
 msgstr ""
 
 #: inc/custom-controls/typography/class-typography-control.php:68
+#: inc/customizer/appearance.php:159
 msgid "Font Size"
 msgstr ""
 
@@ -479,119 +480,119 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#: inc/custom-functions.php:275
+#: inc/custom-functions.php:288
 msgid "Full Name"
 msgstr ""
 
-#: inc/custom-functions.php:275
+#: inc/custom-functions.php:288
 msgid "Name*"
 msgstr ""
 
-#: inc/custom-functions.php:277
+#: inc/custom-functions.php:290
 msgid "Email"
 msgstr ""
 
-#: inc/custom-functions.php:277
+#: inc/custom-functions.php:290
 msgid "Email*"
 msgstr ""
 
-#: inc/custom-functions.php:279
+#: inc/custom-functions.php:292
 msgid "Website"
 msgstr ""
 
-#: inc/custom-functions.php:292
+#: inc/custom-functions.php:305
 msgid "Comment"
 msgstr ""
 
-#: inc/custom-functions.php:370
+#: inc/custom-functions.php:383
 msgid "Browsing Category"
 msgstr ""
 
-#: inc/custom-functions.php:377
+#: inc/custom-functions.php:390
 msgid "Browsing Tags"
 msgstr ""
 
-#: inc/custom-functions.php:384
+#: inc/custom-functions.php:397
 msgid "Browsing Archives"
 msgstr ""
 
-#: inc/custom-functions.php:391
+#: inc/custom-functions.php:404
 msgid "Browsing Recipe Category"
 msgstr ""
 
-#: inc/custom-functions.php:398
+#: inc/custom-functions.php:411
 msgid "Browsing Recipe Cuisine"
 msgstr ""
 
-#: inc/custom-functions.php:405
+#: inc/custom-functions.php:418
 msgid "Browsing Recipe Cooking Method"
 msgstr ""
 
-#: inc/custom-functions.php:409
-#: inc/custom-functions.php:411
+#: inc/custom-functions.php:422
+#: inc/custom-functions.php:424
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
-#: inc/custom-functions.php:411
+#: inc/custom-functions.php:424
 msgid "Year"
 msgstr ""
 
-#: inc/custom-functions.php:415
-#: inc/custom-functions.php:417
+#: inc/custom-functions.php:428
+#: inc/custom-functions.php:430
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr ""
 
-#: inc/custom-functions.php:417
+#: inc/custom-functions.php:430
 msgid "Month"
 msgstr ""
 
-#: inc/custom-functions.php:421
-#: inc/custom-functions.php:423
+#: inc/custom-functions.php:434
+#: inc/custom-functions.php:436
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr ""
 
-#: inc/custom-functions.php:423
+#: inc/custom-functions.php:436
 msgid "Day"
 msgstr ""
 
-#: inc/custom-functions.php:429
+#: inc/custom-functions.php:442
 msgid "Archives"
 msgstr ""
 
-#: inc/custom-functions.php:489
+#: inc/custom-functions.php:502
 msgctxt "placeholder"
 msgid "Enter Keywords..."
 msgstr ""
 
-#: inc/custom-functions.php:490
+#: inc/custom-functions.php:503
 msgid "Search for:"
 msgstr ""
 
-#: inc/custom-functions.php:490
+#: inc/custom-functions.php:503
 msgid "Looking for Something?"
 msgstr ""
 
-#: inc/custom-functions.php:490
+#: inc/custom-functions.php:503
 msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: inc/custom-functions.php:526
+#: inc/custom-functions.php:539
 msgid "Congratulations!"
 msgstr ""
 
-#: inc/custom-functions.php:527
+#: inc/custom-functions.php:540
 msgid "%1$s is now installed and ready to use. Click below to see theme documentation, plugins to install and other details to get started."
 msgstr ""
 
-#: inc/custom-functions.php:528
+#: inc/custom-functions.php:541
 msgid "Go to the dashboard."
 msgstr ""
 
-#: inc/custom-functions.php:529
+#: inc/custom-functions.php:542
 msgid "Dismiss"
 msgstr ""
 
@@ -609,13 +610,127 @@ msgstr ""
 
 #: inc/customizer-plugin-recommend/plugin-install/class-plugin-install-helper.php:75
 #: inc/tgmpa/class-tgm-plugin-activation.php:2876
-#: build/dashboard.js:6341
-#: src/pages/UsefulPlugins/index.jsx:181
+#: build/dashboard.js:6345
+#: src/pages/UsefulPlugins/index.jsx:186
 msgid "Activate"
 msgstr ""
 
 #: inc/customizer-plugin-recommend/plugin-install/class-plugin-install-helper.php:110
 msgid "Activating "
+msgstr ""
+
+#: inc/customizer/appearance.php:16
+msgid "Appearance Settings"
+msgstr ""
+
+#: inc/customizer/appearance.php:17
+msgid "Customize Typography & Color"
+msgstr ""
+
+#: inc/customizer/appearance.php:36
+msgid "Primary Color"
+msgstr ""
+
+#: inc/customizer/appearance.php:37
+msgid "Primary color of the theme."
+msgstr ""
+
+#: inc/customizer/appearance.php:59
+#: inc/elementor-compatibility.php:69
+msgid "Accent Color One"
+msgstr ""
+
+#: inc/customizer/appearance.php:82
+#: inc/elementor-compatibility.php:75
+msgid "Accent Color Two"
+msgstr ""
+
+#: inc/customizer/appearance.php:94
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer/appearance.php:114
+msgid "Primary Font"
+msgstr ""
+
+#: inc/customizer/appearance.php:115
+msgid "Primary font of the site."
+msgstr ""
+
+#: inc/customizer/appearance.php:136
+msgid "Secondary Font"
+msgstr ""
+
+#: inc/customizer/appearance.php:137
+msgid "Secondary font of the site."
+msgstr ""
+
+#: inc/customizer/appearance.php:160
+msgid "Change the font size of your site."
+msgstr ""
+
+#: inc/customizer/appearance.php:185
+msgid "Load Google Fonts Locally"
+msgstr ""
+
+#: inc/customizer/appearance.php:186
+msgid "Enable to load google fonts from your own server instead from google's CDN. This solves privacy concerns with Google's CDN and their sometimes less-than-transparent policies."
+msgstr ""
+
+#: inc/customizer/appearance.php:205
+msgid "Preload Local Fonts"
+msgstr ""
+
+#: inc/customizer/appearance.php:206
+msgid "Preloading Google fonts will speed up your website speed."
+msgstr ""
+
+#: inc/customizer/appearance.php:214
+msgid "Click the button to reset the local fonts cache"
+msgstr ""
+
+#: inc/customizer/appearance.php:216
+msgid "Flush Local Font Files"
+msgstr ""
+
+#: inc/customizer/appearance.php:230
+msgid "Flush Local Fonts Cache"
+msgstr ""
+
+#: inc/customizer/appearance.php:259
+#: inc/customizer/footer.php:58
+#: inc/customizer/general.php:45
+#: inc/customizer/general.php:324
+#: inc/customizer/general.php:378
+#: inc/customizer/general.php:1014
+#: inc/customizer/general.php:1175
+#: inc/customizer/general.php:1227
+#: inc/customizer/layout.php:46
+#: inc/customizer/layout.php:99
+#: inc/customizer/layout.php:152
+#: inc/customizer/layout.php:205
+#: inc/customizer/layout.php:347
+msgid "%1$sThis feature is available in Pro version.%2$s %3$sUpgrade to Pro%4$s "
+msgstr ""
+
+#: inc/customizer/builder.php:15
+msgid "Homepage Builder"
+msgstr ""
+
+#: inc/customizer/builder.php:34
+msgid "Choose Home Page Builder"
+msgstr ""
+
+#: inc/customizer/builder.php:37
+msgid "Customizer"
+msgstr ""
+
+#: inc/customizer/builder.php:38
+msgid "Page Builder"
+msgstr ""
+
+#: inc/customizer/builder.php:58
+msgid "Refresh the Customizer after publishing new changes."
 msgstr ""
 
 #: inc/customizer/footer.php:13
@@ -626,23 +741,6 @@ msgstr ""
 
 #: inc/customizer/footer.php:32
 msgid "Footer Copyright Text"
-msgstr ""
-
-#: inc/customizer/footer.php:58
-#: inc/customizer/general.php:45
-#: inc/customizer/general.php:324
-#: inc/customizer/general.php:378
-#: inc/customizer/general.php:1014
-#: inc/customizer/general.php:1243
-#: inc/customizer/general.php:1295
-#: inc/customizer/layout.php:46
-#: inc/customizer/layout.php:99
-#: inc/customizer/layout.php:152
-#: inc/customizer/layout.php:205
-#: inc/customizer/layout.php:347
-#: inc/customizer/site.php:43
-#: inc/customizer/typography.php:34
-msgid "%1$sThis feature is available in Pro version.%2$s %3$sUpgrade to Pro%4$s "
 msgstr ""
 
 #: inc/customizer/general.php:16
@@ -833,8 +931,8 @@ msgid "Enable to show breadcrumb in inner pages."
 msgstr ""
 
 #: inc/customizer/general.php:609
-#: inc/extras.php:717
-#: build/dashboard.js:6387
+#: inc/extras.php:679
+#: build/dashboard.js:6391
 #: src/pages/index.js:16
 msgid "Home"
 msgstr ""
@@ -1004,52 +1102,24 @@ msgstr ""
 msgid "Misc Settings"
 msgstr ""
 
-#: inc/customizer/general.php:1175
-msgid "Load Google Fonts Locally"
-msgstr ""
-
-#: inc/customizer/general.php:1176
-msgid "Enable to load google fonts from your own server instead from google's CDN. This solves privacy concerns with Google's CDN and their sometimes less-than-transparent policies."
-msgstr ""
-
-#: inc/customizer/general.php:1195
-msgid "Preload Local Fonts"
-msgstr ""
-
-#: inc/customizer/general.php:1196
-msgid "Preloading Google fonts will speed up your website speed."
-msgstr ""
-
-#: inc/customizer/general.php:1204
-msgid "Click the button to reset the local fonts cache"
-msgstr ""
-
 #: inc/customizer/general.php:1206
-msgid "Flush Local Font Files"
-msgstr ""
-
-#: inc/customizer/general.php:1220
-msgid "Flush Local Fonts Cache"
-msgstr ""
-
-#: inc/customizer/general.php:1274
 msgid "Google Analytic Settings"
 msgstr ""
 
-#: inc/customizer/general.php:1331
+#: inc/customizer/general.php:1263
 #: inc/extras.php:143
 msgid "Latest Posts"
 msgstr ""
 
-#: inc/customizer/general.php:1332
+#: inc/customizer/general.php:1264
 msgid "Category"
 msgstr ""
 
-#: inc/customizer/general.php:1335
+#: inc/customizer/general.php:1267
 msgid "Latest BRM Recipes"
 msgstr ""
 
-#: inc/customizer/general.php:1338
+#: inc/customizer/general.php:1270
 msgid "Latest Delicious Recipes"
 msgstr ""
 
@@ -1135,12 +1205,44 @@ msgstr ""
 msgid "Pagination Settings"
 msgstr ""
 
-#: inc/customizer/typography.php:13
-msgid "Typography"
+#: inc/customizer/site.php:41
+msgid "Logo Width"
+msgstr ""
+
+#: inc/customizer/site.php:42
+msgid "Set the width(px) of your Site Logo."
+msgstr ""
+
+#: inc/customizer/site.php:68
+msgid "Site Title Font"
+msgstr ""
+
+#: inc/customizer/site.php:69
+msgid "Site title and tagline font."
+msgstr ""
+
+#: inc/customizer/site.php:91
+msgid "Site Title Font Size"
+msgstr ""
+
+#: inc/customizer/site.php:92
+msgid "Change the font size of your site title."
 msgstr ""
 
 #: inc/dashboard/dashboard.php:108
 msgid "Sorry, you are not allowed to do that."
+msgstr ""
+
+#: inc/elementor-compatibility.php:33
+msgid "Blossom Recipe Color"
+msgstr ""
+
+#: inc/elementor-compatibility.php:34
+msgid "Blossom Recipe Fonts"
+msgstr ""
+
+#: inc/elementor-compatibility.php:63
+msgid "Primary Theme Color"
 msgstr ""
 
 #: inc/extras.php:17
@@ -1197,64 +1299,52 @@ msgstr ""
 msgid "Choose Category"
 msgstr ""
 
-#. translators: If there are characters in your language that are not supported by Nunito Sans, translate this to 'off'. Do not translate into your own language.
-#: inc/extras.php:667
-msgctxt "Nunito Sans: on or off"
-msgid "on"
-msgstr ""
-
-#. translators: If there are characters in your language that are not supported by Marcellus, translate this to 'off'. Do not translate into your own language.
-#: inc/extras.php:672
-msgctxt "Marcellus: on or off"
-msgid "on"
-msgstr ""
-
-#: inc/extras.php:924
+#: inc/extras.php:886
 msgid "Search Results for \""
 msgstr ""
 
-#: inc/extras.php:924
+#: inc/extras.php:886
 msgid "\""
 msgstr ""
 
-#: inc/extras.php:929
-#: inc/extras.php:931
-#: inc/extras.php:933
-#: inc/extras.php:938
-#: inc/extras.php:940
-#: inc/extras.php:945
+#: inc/extras.php:891
+#: inc/extras.php:893
+#: inc/extras.php:895
+#: inc/extras.php:900
+#: inc/extras.php:902
+#: inc/extras.php:907
 #: inc/partials.php:91
 msgid "Y"
 msgstr ""
 
-#: inc/extras.php:931
-#: inc/extras.php:933
-#: inc/extras.php:940
+#: inc/extras.php:893
+#: inc/extras.php:895
+#: inc/extras.php:902
 msgid "m"
 msgstr ""
 
-#: inc/extras.php:931
-#: inc/extras.php:940
+#: inc/extras.php:893
+#: inc/extras.php:902
 msgid "F"
 msgstr ""
 
-#: inc/extras.php:933
+#: inc/extras.php:895
 msgid "d"
 msgstr ""
 
-#: inc/extras.php:1054
+#: inc/extras.php:1016
 msgid "Page %s"
 msgstr ""
 
-#: inc/extras.php:1102
+#: inc/extras.php:1064
 msgid "404 Error - Page Not Found"
 msgstr ""
 
-#: inc/extras.php:1105
+#: inc/extras.php:1067
 msgid " (Page"
 msgstr ""
 
-#: inc/extras.php:1105
+#: inc/extras.php:1067
 msgid ")"
 msgstr ""
 
@@ -1658,8 +1748,8 @@ msgid "Upgrade message from the plugin author:"
 msgstr ""
 
 #: inc/tgmpa/class-tgm-plugin-activation.php:2867
-#: build/dashboard.js:6335
-#: src/pages/UsefulPlugins/index.jsx:171
+#: build/dashboard.js:6339
+#: src/pages/UsefulPlugins/index.jsx:176
 msgid "Install"
 msgstr ""
 
@@ -1761,35 +1851,109 @@ msgstr ""
 #: inc/tgmpa/recommended-plugins.php:56
 #: build/dashboard.js:6189
 #: src/pages/UsefulPlugins/index.jsx:12
-msgid "BlossomThemes Toolkit"
+msgid "Delisho"
 msgstr ""
 
 #: inc/tgmpa/recommended-plugins.php:61
 #: build/dashboard.js:6193
 #: src/pages/UsefulPlugins/index.jsx:17
-msgid "BlossomThemes Email Newsletter"
+msgid "BlossomThemes Toolkit"
 msgstr ""
 
 #: inc/tgmpa/recommended-plugins.php:66
-#: build/dashboard.js:6209
-#: src/pages/UsefulPlugins/index.jsx:37
-msgid "Smash Balloon Social Photo Feed"
+#: build/dashboard.js:6197
+#: src/pages/UsefulPlugins/index.jsx:22
+msgid "BlossomThemes Email Newsletter"
 msgstr ""
 
 #: inc/tgmpa/recommended-plugins.php:71
-#: build/dashboard.js:6201
-#: src/pages/UsefulPlugins/index.jsx:27
-msgid "Regenerate Thumbnails"
+#: build/dashboard.js:6213
+#: src/pages/UsefulPlugins/index.jsx:42
+msgid "Smash Balloon Social Photo Feed"
 msgstr ""
 
 #: inc/tgmpa/recommended-plugins.php:76
-#: build/dashboard.js:6197
-#: src/pages/UsefulPlugins/index.jsx:22
-msgid "Contact Form 7"
+#: build/dashboard.js:6205
+#: src/pages/UsefulPlugins/index.jsx:32
+msgid "Regenerate Thumbnails"
 msgstr ""
 
 #: inc/tgmpa/recommended-plugins.php:81
+#: build/dashboard.js:6201
+#: src/pages/UsefulPlugins/index.jsx:27
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/tgmpa/recommended-plugins.php:86
 msgid "AffiliateX"
+msgstr ""
+
+#. Translators: If there are characters in your language that are not supported by respective fonts, translate this to 'off'. Do not translate into your own language.
+#: inc/typography.php:26
+msgctxt "Primary Font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/typography.php:27
+msgctxt "Secondary Font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/typography.php:28
+msgctxt "Site Title Font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/typography.php:361
+msgid "Georgia"
+msgstr ""
+
+#: inc/typography.php:362
+msgid "Palatino Linotype, Book Antiqua, Palatino"
+msgstr ""
+
+#: inc/typography.php:363
+msgid "Times New Roman, Times"
+msgstr ""
+
+#: inc/typography.php:364
+msgid "Arial, Helvetica"
+msgstr ""
+
+#: inc/typography.php:365
+msgid "Arial Black, Gadget"
+msgstr ""
+
+#: inc/typography.php:366
+msgid "Comic Sans MS, cursive"
+msgstr ""
+
+#: inc/typography.php:367
+msgid "Impact, Charcoal"
+msgstr ""
+
+#: inc/typography.php:368
+msgid "Lucida Sans Unicode, Lucida Grande"
+msgstr ""
+
+#: inc/typography.php:369
+msgid "Tahoma, Geneva"
+msgstr ""
+
+#: inc/typography.php:370
+msgid "Trebuchet MS, Helvetica"
+msgstr ""
+
+#: inc/typography.php:371
+msgid "Verdana, Geneva"
+msgstr ""
+
+#: inc/typography.php:372
+msgid "Courier New, Courier"
+msgstr ""
+
+#: inc/typography.php:373
+msgid "Lucida Console, Monaco"
 msgstr ""
 
 #: inc/widgets.php:12
@@ -2333,75 +2497,80 @@ msgstr ""
 
 #: build/dashboard.js:6190
 #: src/pages/UsefulPlugins/index.jsx:13
-msgid "BlossomThemes Toolkit provides you necessary widgets for better and effective blogging."
+msgid "An Elementor Widget and Gutenberg Blocks plugin for WP Delicious that include 10+ widgets and 4 Gutenberg blocks to create beautiful and interactive recipe blogs with a quick drag-and-drop."
 msgstr ""
 
 #: build/dashboard.js:6194
 #: src/pages/UsefulPlugins/index.jsx:18
-msgid "Easily add email subscription form to your website using shortcode and widget."
+msgid "BlossomThemes Toolkit provides you necessary widgets for better and effective blogging."
 msgstr ""
 
 #: build/dashboard.js:6198
 #: src/pages/UsefulPlugins/index.jsx:23
-msgid "Just another contact form plugin. Simple but flexible."
+msgid "Easily add email subscription form to your website using shortcode and widget."
 msgstr ""
 
 #: build/dashboard.js:6202
 #: src/pages/UsefulPlugins/index.jsx:28
-msgid "Regenerate the thumbnails for one or more of your image uploads. Useful when changing their sizes or your theme."
-msgstr ""
-
-#: build/dashboard.js:6205
-#: src/pages/UsefulPlugins/index.jsx:32
-msgid "AffiliateX – Best Amazon Affiliate WordPress Plugin"
+msgid "Just another contact form plugin. Simple but flexible."
 msgstr ""
 
 #: build/dashboard.js:6206
 #: src/pages/UsefulPlugins/index.jsx:33
-msgid "Create a professional-looking affiliate websites with highly customizable blocks that help in increasing the conversion rate and boost your affiliate income."
+msgid "Regenerate the thumbnails for one or more of your image uploads. Useful when changing their sizes or your theme."
+msgstr ""
+
+#: build/dashboard.js:6209
+#: src/pages/UsefulPlugins/index.jsx:37
+msgid "AffiliateX – Best Amazon Affiliate WordPress Plugin"
 msgstr ""
 
 #: build/dashboard.js:6210
 #: src/pages/UsefulPlugins/index.jsx:38
+msgid "Create a professional-looking affiliate websites with highly customizable blocks that help in increasing the conversion rate and boost your affiliate income."
+msgstr ""
+
+#: build/dashboard.js:6214
+#: src/pages/UsefulPlugins/index.jsx:43
 msgid "Formerly 'Instagram Feed'. Display clean, customizable, and responsive Instagram feeds from multiple accounts. Supports Instagram oEmbeds."
 msgstr ""
 
-#: build/dashboard.js:6338
-#: src/pages/UsefulPlugins/index.jsx:176
+#: build/dashboard.js:6342
+#: src/pages/UsefulPlugins/index.jsx:181
 msgid "Installing..."
 msgstr ""
 
-#: build/dashboard.js:6344
-#: src/pages/UsefulPlugins/index.jsx:186
+#: build/dashboard.js:6348
+#: src/pages/UsefulPlugins/index.jsx:191
 msgid "Activating..."
 msgstr ""
 
-#: build/dashboard.js:6347
-#: src/pages/UsefulPlugins/index.jsx:191
+#: build/dashboard.js:6351
+#: src/pages/UsefulPlugins/index.jsx:196
 msgid "Activated"
 msgstr ""
 
-#: build/dashboard.js:6393
+#: build/dashboard.js:6397
 #: src/pages/index.js:21
 msgid "Starter Sites"
 msgstr ""
 
-#: build/dashboard.js:6399
+#: build/dashboard.js:6403
 #: src/pages/index.js:26
 msgid "Free vs Pro"
 msgstr ""
 
-#: build/dashboard.js:6405
+#: build/dashboard.js:6409
 #: src/pages/index.js:31
 msgid "Offers"
 msgstr ""
 
-#: build/dashboard.js:6411
+#: build/dashboard.js:6415
 #: src/pages/index.js:36
 msgid "FAQs"
 msgstr ""
 
-#: build/dashboard.js:6417
+#: build/dashboard.js:6421
 #: src/pages/index.js:41
 msgid "Useful Plugins"
 msgstr ""

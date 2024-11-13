@@ -4,10 +4,10 @@ Theme URI: https://blossomthemes.com/wordpress-themes/blossom-recipe/
 Author: Blossom Themes
 Author URI: https://blossomthemes.com/
 Description: Blossom Recipe is a beautifully designed, feature-rich and fully responsive free WordPress theme to help you create yummy delicious food and recipe blogs. This theme can be a suitable choice for you to share your mouth-watering recipes with the world. You can create a fully functional and professional blog with Blossom Recipe free theme without writing a single line of code. This theme features a clean and attractive layout on the front-end and advanced content management system on the back-end. Furthermore, it is a speed optimized theme which provides your visitors with excellent user experience and keeps them engaged on your website. The Ultra SEO optimized, and Schema.org Markup ready codes help your website rank at the top in Google and other search engine results. This theme contains plenty of space for ads and is Google Adsense optimized to help you earn good revenue from your blog. Blossom Recipe free theme features extensive documentation to guide you create an attractive recipe/food blog from scratch. Also, it is backed up by a quick, responsive and friendly support team to help you solve any issues you get while creating a website with this theme. If you get any issue or have any questions related to the theme, you can contact the friendly support team. Check theme details at https://blossomthemes.com/downloads/blossom-recipe-free-wordpress-theme/, demo at https://blossomthemes.com/theme-demo/?theme=blossom-recipe, read the documentation at https://docs.blossomthemes.com/docs/blossom-recipe/, and get support at https://blossomthemes.com/support-ticket/.
-Version: 1.3.0
+Version: 1.3.1
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
-Tested up to: 6.5
+Tested up to: 6.7
 Requires PHP: 5.6
 Text Domain: blossom-recipe
 Tags: food-and-drink, blog, one-column, two-columns, right-sidebar, left-sidebar, footer-widgets, custom-background, custom-header, custom-menu, custom-logo, featured-images, threaded-comments, full-width-template, rtl-language-support, translation-ready, theme-options, e-commerce
@@ -298,23 +298,23 @@ h6 {
 }
 
 h1 {
-    font-size: 2.223em;
+    font-size: clamp(1.77em, calc(1.77rem + ((1vw - 0.2em) * 0.75)), 2.22em);
 }
 
 h2 {
-    font-size: 2em;
+    font-size: clamp(1.55em, calc(1.55rem + ((1vw - 0.2em) * 0.75)), 2em);
 }
 
 h3 {
-    font-size: 1.667em;
+    font-size: clamp(1.33em, calc(1.33rem + ((1vw - 0.2em) * 0.5617)), 1.667em);
 }
 
 h4 {
-    font-size: 1.333em;
+    font-size: clamp(1.11em, calc(1.11rem + ((1vw - 0.2em) * 0.3717)), 1.333em);
 }
 
 h5 {
-    font-size: 1.112em;
+    font-size: clamp(1em, calc(1rem + ((1vw - 0.2em) * 0.1867)), 1.112em);
 }
 
 h6 {
@@ -473,7 +473,7 @@ table tr td {
 }
 
 table tbody tr:nth-child(odd) {
-    background: rgba(241, 86, 65, 0.15);
+    background: rgba(var(--primary-color-rgb), 0.15);
 }
 
 
@@ -1392,8 +1392,9 @@ body:not(.single) .entry-footer .read-time-wrap+.edit-link {
     top: 3px;
     right: -5px;
     position: absolute;
-    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23f15641" d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg>');
-    background-repeat: no-repeat;
+    mask-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23f15641" d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg>');
+    mask-repeat: no-repeat;
+    background-color: var(--primary-color);
     width: 23px;
     height: 21px;
 }
@@ -1705,8 +1706,8 @@ q {
     line-height: 1.5;
     text-align: center;
     margin: 50px 0;
-    border-top: 3px solid rgba(241, 86, 65, 0.15);
-    border-bottom: 3px solid rgba(241, 86, 65, 0.15);
+    border-top: 3px solid rgba(var(--primary-color-rgb), 0.15);
+    border-bottom: 3px solid rgba(var(--primary-color-rgb), 0.15);
     padding: 40px;
     position: relative;
 }
@@ -1744,7 +1745,7 @@ blockquote:before {
 blockquote:after,
 blockquote p:first-child:before {
     content: "";
-    border-top: 35px solid rgba(241, 86, 65, 0.15);
+    border-top: 35px solid rgba(var(--primary-color-rgb), 0.15);
     border-right: 30px solid transparent;
     position: absolute;
     bottom: -35px;
@@ -2054,9 +2055,10 @@ COMMENTS AREA
 
 .comment-body .reply .comment-reply-link:before {
     content: "";
-    background-image: url('data:image/svg+xml;utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="%23f15641" d="M136.309 189.836L312.313 37.851C327.72 24.546 352 35.348 352 56.015v82.763c129.182 10.231 224 52.212 224 183.548 0 61.441-39.582 122.309-83.333 154.132-13.653 9.931-33.111-2.533-28.077-18.631 38.512-123.162-3.922-169.482-112.59-182.015v84.175c0 20.701-24.3 31.453-39.687 18.164L136.309 226.164c-11.071-9.561-11.086-26.753 0-36.328zm-128 36.328L184.313 378.15C199.7 391.439 224 380.687 224 359.986v-15.818l-108.606-93.785A55.96 55.96 0 0 1 96 207.998a55.953 55.953 0 0 1 19.393-42.38L224 71.832V56.015c0-20.667-24.28-31.469-39.687-18.164L8.309 189.836c-11.086 9.575-11.071 26.767 0 36.328z"></path></svg>');
-    background-repeat: no-repeat;
-    background-size: 15px;
+    mask-image: url('data:image/svg+xml;utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="%23f15641" d="M136.309 189.836L312.313 37.851C327.72 24.546 352 35.348 352 56.015v82.763c129.182 10.231 224 52.212 224 183.548 0 61.441-39.582 122.309-83.333 154.132-13.653 9.931-33.111-2.533-28.077-18.631 38.512-123.162-3.922-169.482-112.59-182.015v84.175c0 20.701-24.3 31.453-39.687 18.164L136.309 226.164c-11.071-9.561-11.086-26.753 0-36.328zm-128 36.328L184.313 378.15C199.7 391.439 224 380.687 224 359.986v-15.818l-108.606-93.785A55.96 55.96 0 0 1 96 207.998a55.953 55.953 0 0 1 19.393-42.38L224 71.832V56.015c0-20.667-24.28-31.469-39.687-18.164L8.309 189.836c-11.086 9.575-11.071 26.767 0 36.328z"></path></svg>');
+    mask-repeat: no-repeat;
+    mask-size: 15px;
+    background-color: var(--primary-color);
     font-weight: 400;
     margin-right: 10px;
     display: inline-block;
@@ -2337,7 +2339,6 @@ nav.pagination {
     position: absolute;
     left: 20px;
     top: 11px;
-    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23f15641" d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg>');
     background-repeat: no-repeat;
     width: 20px;
     height: 21px;
@@ -2346,12 +2347,18 @@ nav.pagination {
     -moz-transition: all ease 0.35s;
 }
 
+.page-numbers.next:before {
+    mask-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23f15641" d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg>');
+    background-color: var(--primary-color);
+}
+
 .page-numbers.next:hover:before {
     background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23fff" d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg>');
 }
 
 .page-numbers.prev:before {
-    background-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23f15641" d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"></path></svg>');
+    mask-image: url('data:image/svg+xml; utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="%23f15641" d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"></path></svg>');
+    background-color: var(--primary-color);
 }
 
 .page-numbers.prev:hover:before {
@@ -2378,7 +2385,7 @@ nav.pagination {
     text-align: center;
     color: #3f3b36;
     font-size: 20px;
-    background: rgba(241, 86, 65, 0.15);
+    background: rgba(var(--primary-color-rgb), 0.15);
     margin-right: 5px;
     -webkit-transition: none;
     -moz-transition: none;
@@ -3007,10 +3014,7 @@ body:not(.home) .site-header {
 }
 
 .site-branding .site-title {
-    font-size: 1.6665em;
     margin: 0;
-    font-weight: 400;
-    font-family: var(--secondary-font);
     line-height: 1;
 }
 
@@ -4823,7 +4827,7 @@ figure.author-img {
     line-height: 35px;
     font-size: 16px;
     padding: 0;
-    background: rgba(241, 86, 65, 0.15);
+    background: rgba(var(--primary-color-rgb), 0.15);
     border-radius: 100%;
 }
 
@@ -4952,7 +4956,7 @@ SINGLE POST
     line-height: 30px;
     display: inline-block;
     vertical-align: middle;
-    background: rgba(241, 86, 65, 0.15);
+    background: rgba(var(--primary-color-rgb), 0.15);
     border-radius: 100%;
     margin-bottom: 10px;
 }
@@ -5298,7 +5302,7 @@ WIDGET AUTHOR BIO
     text-align: center;
     height: 30px;
     line-height: 32px;
-    background: rgba(241, 86, 65, 0.15);
+    background: rgba(var(--primary-color-rgb), 0.15);
     border-radius: 100%;
     color: #000;
 }
@@ -5427,7 +5431,7 @@ WIDGET CONTACT SOCIAL LINKS
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(241, 86, 65, 0.15);
+    background: rgba(var(--primary-color-rgb), 0.15);
     padding: 7px;
     width: 30px;
     height: 30px;
@@ -5469,7 +5473,7 @@ WIDGET CONTACT SOCIAL LINKS
     text-align: center;
     height: 40px;
     line-height: 40px;
-    background: rgba(241, 86, 65, 0.15);
+    background: rgba(var(--primary-color-rgb), 0.15);
     border-radius: 100%;
     color: #000;
 }
@@ -5754,7 +5758,7 @@ WIDGET POST CATEGORY SLIDER
 
 .widget_bttk_posts_category_slider_widget .owl-carousel .owl-dots .owl-dot span,
 .widget_brm_recipe_categories_slider .owl-theme .owl-dots .owl-dot span {
-    background: rgba(241, 86, 65, 0.15);
+    background: rgba(var(--primary-color-rgb), 0.15);
     position: relative;
     margin: 5px;
     width: 8px;
@@ -5809,7 +5813,7 @@ WIDGET SOCIAL LINKS
     width: 59px;
     height: 59px;
     line-height: 59px;
-    background: rgba(241, 86, 65, 0.15);
+    background: rgba(var(--primary-color-rgb), 0.15);
     color: #000;
     border-radius: 100%;
 }
@@ -5928,7 +5932,7 @@ WIDGET TEAM
     text-align: center;
     height: 40px;
     line-height: 40px;
-    background: rgba(241, 86, 65, 0.15);
+    background: rgba(var(--primary-color-rgb), 0.15);
     border-radius: 100%;
     color: #000;
 }
@@ -6279,7 +6283,7 @@ COMMON WIDGET STYLES
 .widget_recent_entries ul li::before,
 .widget_nav_menu ul li::before {
     content: "";
-    background: rgba(241, 86, 65, 0.15);
+    background: rgba(var(--primary-color-rgb), 0.15);
     width: 10px;
     height: 10px;
     position: absolute;

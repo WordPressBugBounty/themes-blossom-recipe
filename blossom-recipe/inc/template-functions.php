@@ -213,7 +213,7 @@ function blossom_recipe_content_start(){
     
     ?>
     <div id="content" class="site-content">
-        <?php if( ! is_page_template( $template ) ){ ?>
+        <?php if( ! is_page_template( $template ) && ! blossom_recipe_is_elementor_activated_post() ){ ?>
             <header class="page-header<?php echo ( $background_image ) ? ' has-bg' : ''; ?>"<?php echo $background_image; ?>>
                 <div class="container">
         			<?php
@@ -729,3 +729,18 @@ function blossom_recipe_page_end(){ ?>
 }
 endif;
 add_action( 'blossom_recipe_after_footer', 'blossom_recipe_page_end', 20 );
+
+/**
+ * Remove frontpage sections when page builder is active
+ */
+add_action('wp', function(){
+    $builder_types  = get_theme_mod( 'builder_types', 'customizer' );
+
+    if( 'builder' === $builder_types){
+        remove_action( 'blossom_recipe_after_header', 'blossom_recipe_banner', 15 );
+    }
+
+    if( blossom_recipe_is_elementor_activated_post()) {
+        remove_action( 'blossom_recipe_before_footer_start', 'blossom_recipe_newsletter_section', 10 );
+    }
+});

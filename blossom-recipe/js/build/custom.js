@@ -10,29 +10,31 @@ jQuery(document).ready(function($) {
     }
     
     //banner slider js
-    $(".slider-one .banner-slider").owlCarousel({
-        items:3,
-        margin: 20,
-        loop: true,
-        dots: false,
-        nav: true,
-        autoplay: true,
-        smartSpeed: 500,
-        rtl:rtl,
-        lazyLoad   : true,
-        autoplayTimeout : 2000,
-        responsive : {
-            0 : {
-                items: 1,
-            },
-            768 : {
-                items: 2,
-            }, 
-            1025 : {
-                items: 3,
+    if ($('.slider-one .banner-slider').length) {
+        $(".slider-one .banner-slider").owlCarousel({
+            items:3,
+            margin: 20,
+            loop: true,
+            dots: false,
+            nav: true,
+            autoplay: true,
+            smartSpeed: 500,
+            rtl:rtl,
+            lazyLoad   : true,
+            autoplayTimeout : 2000,
+            responsive : {
+                0 : {
+                    items: 1,
+                },
+                768 : {
+                    items: 2,
+                }, 
+                1025 : {
+                    items: 3,
+                }
             }
-        }
-    });
+        });
+    }
     
     $('.sticky-t-bar').addClass('active');
     $('.sticky-t-bar .sticky-bar-content').show();

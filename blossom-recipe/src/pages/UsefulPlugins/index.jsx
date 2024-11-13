@@ -9,6 +9,11 @@ const pluginList = [
         slug: "delicious-recipes"
     },
     {
+        pluginName: __( 'Delisho', 'blossom-recipe' ),
+        description: __("An Elementor Widget and Gutenberg Blocks plugin for WP Delicious that include 10+ widgets and 4 Gutenberg blocks to create beautiful and interactive recipe blogs with a quick drag-and-drop.", "blossom-recipe"),
+        slug: "dr-widgets-blocks"
+    },
+    {
         pluginName: __( 'BlossomThemes Toolkit', 'blossom-recipe' ),
         description: __("BlossomThemes Toolkit provides you necessary widgets for better and effective blogging.", "blossom-recipe"),
         slug: "blossomthemes-toolkit"

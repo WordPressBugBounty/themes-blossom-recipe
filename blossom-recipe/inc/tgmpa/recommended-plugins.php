@@ -53,6 +53,11 @@ function blossom_recipe_register_required_plugins() {
 			'required'  => false,
 		),
 		array(
+			'name'		=> __( 'Delisho', 'blossom-recipe' ),
+			'slug'		=> 'dr-widgets-blocks',
+			'required'  => false,
+		),
+		array(
 			'name'      => __( 'BlossomThemes Toolkit', 'blossom-recipe' ),
 			'slug'      => 'blossomthemes-toolkit',
 			'required'  => false,

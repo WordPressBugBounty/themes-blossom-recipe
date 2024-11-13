@@ -25,47 +25,79 @@ function blossom_recipe_customize_register( $wp_customize ) {
     
     $wp_customize->get_section( 'background_image' )->priority = 40;
 
-    /** Note */
+    /** Logo Width */
     $wp_customize->add_setting(
-        'colors_text',
+        'logo_width',
         array(
-            'default'           => '',
-            'sanitize_callback' => 'wp_kses_post' 
+            'default'           => 150,
+            'sanitize_callback' => 'blossom_recipe_sanitize_number_absint',
+            'transport'         => 'postMessage'
         )
     );
 
     $wp_customize->add_control(
-        new Blossom_Recipe_Note_Control( 
-            $wp_customize,
-            'colors_text',
-            array(
-                'section'     => 'colors',
-                'description' => sprintf( __( '%1$sThis feature is available in Pro version.%2$s %3$sUpgrade to Pro%4$s ', 'blossom-recipe' ),'<div class="featured-pro"><span>', '</span>', '<a href="https://blossomthemes.com/wordpress-themes/blossom-recipe-pro/?utm_source=blossom_recipe&utm_medium=customizer&utm_campaign=upgrade_to_pro" target="_blank">', '</a></div>' ),
-            )
-        )
-    );
-
-
-    $wp_customize->add_setting( 
-        'colors_settings', 
+        'logo_width',
         array(
-            'default'           => 'one',
-            'sanitize_callback' => 'blossom_recipe_sanitize_radio'
-        ) 
-    );
-
-    $wp_customize->add_control(
-        new Blossom_Recipe_Radio_Image_Control(
-            $wp_customize,
-            'colors_settings',
-            array(
-                'section'     => 'colors',
-                'choices'     => array(
-                    'one'       => get_template_directory_uri() . '/images/pro/colors.png',
-                ),
+            'label'       => __( 'Logo Width', 'blossom-recipe' ),
+            'description' => __( 'Set the width(px) of your Site Logo.', 'blossom-recipe' ),
+            'section'     => 'title_tagline',
+            'type'        => 'number',
+            'input_attrs' => array(
+                'min' => 1
             )
         )
     );
     
+    /** Site Title Font */
+    $wp_customize->add_setting( 
+        'site_title_font', 
+        array(
+            'default' => array(                                			
+                'font-family' => 'Marcellus',
+                'variant'     => '500',
+            ),
+            'sanitize_callback' => array( 'Blossom_Recipe_Fonts', 'sanitize_typography' )
+        ) 
+    );
+
+	$wp_customize->add_control( 
+        new Blossom_Recipe_Typography_Control( 
+            $wp_customize, 
+            'site_title_font', 
+            array(
+                'label'       => __( 'Site Title Font', 'blossom-recipe' ),
+                'description' => __( 'Site title and tagline font.', 'blossom-recipe' ),
+                'section'     => 'title_tagline',
+                'priority'    => 60, 
+            ) 
+        ) 
+    );
+    
+    /** Site Title Font Size*/
+    $wp_customize->add_setting( 
+        'site_title_font_size', 
+        array(
+            'default'           => 30,
+            'sanitize_callback' => 'blossom_recipe_sanitize_number_absint'
+        ) 
+    );
+    
+    $wp_customize->add_control(
+		new Blossom_Recipe_Slider_Control( 
+			$wp_customize,
+			'site_title_font_size',
+			array(
+				'section'	  => 'title_tagline',
+				'label'		  => __( 'Site Title Font Size', 'blossom-recipe' ),
+				'description' => __( 'Change the font size of your site title.', 'blossom-recipe' ),
+                'priority'    => 65,
+                'choices'	  => array(
+					'min' 	=> 10,
+					'max' 	=> 200,
+					'step'	=> 1,
+				)                 
+			)
+		)
+	);
 }
 add_action( 'customize_register', 'blossom_recipe_customize_register' );

@@ -39,4 +39,17 @@
 			}
 		} );
 	} );
+
+	wp.customize( 'primary_color', function( value ) {
+		value.bind( function( to ) {
+			$('head').append('<style>:root{--primary-color:'+to+';}</style>');
+		} );
+	} );
+	
+	//Site Width Logo
+	wp.customize( 'logo_width', function( value ) {
+		value.bind( function( to ) {
+			$( '.custom-logo-link img' ).css( 'width',to + 'px' );
+		} );
+	} );
 } )( jQuery );
