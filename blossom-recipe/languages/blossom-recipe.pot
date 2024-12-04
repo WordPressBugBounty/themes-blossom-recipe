@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Blossom Recipe 1.3.1\n"
+"Project-Id-Version: Blossom Recipe 1.3.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/blossom-recipe\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-10-02T06:00:53+00:00\n"
+"POT-Creation-Date: 2024-11-29T07:06:41+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: blossom-recipe\n"
@@ -27,7 +27,7 @@ msgid "Blossom Recipe is a beautifully designed, feature-rich and fully responsi
 msgstr ""
 
 #. Author of the theme
-#: inc/template-functions.php:683
+#: inc/template-functions.php:696
 msgid "Blossom Themes"
 msgstr ""
 
@@ -52,17 +52,17 @@ msgid "Take me to the home page"
 msgstr ""
 
 #: archive-blossom-recipe.php:38
-#: inc/template-functions.php:532
+#: inc/template-functions.php:545
 msgid "Previous"
 msgstr ""
 
 #: archive-blossom-recipe.php:39
-#: inc/template-functions.php:533
+#: inc/template-functions.php:546
 msgid "Next"
 msgstr ""
 
 #: archive-blossom-recipe.php:40
-#: inc/template-functions.php:534
+#: inc/template-functions.php:547
 msgid "Page"
 msgstr ""
 
@@ -610,7 +610,7 @@ msgstr ""
 
 #: inc/customizer-plugin-recommend/plugin-install/class-plugin-install-helper.php:75
 #: inc/tgmpa/class-tgm-plugin-activation.php:2876
-#: build/dashboard.js:6345
+#: build/dashboard.js:6884
 #: src/pages/UsefulPlugins/index.jsx:186
 msgid "Activate"
 msgstr ""
@@ -734,7 +734,7 @@ msgid "Refresh the Customizer after publishing new changes."
 msgstr ""
 
 #: inc/customizer/footer.php:13
-#: build/dashboard.js:5884
+#: build/dashboard.js:6423
 #: src/pages/Home/index.jsx:38
 msgid "Footer Settings"
 msgstr ""
@@ -752,7 +752,7 @@ msgid "Customize Banner, Featured, Social, Sharing, SEO, Post/Page, Newsletter &
 msgstr ""
 
 #: inc/customizer/general.php:24
-#: build/dashboard.js:5904
+#: build/dashboard.js:6443
 #: src/pages/Home/index.jsx:64
 msgid "Top Bar Settings"
 msgstr ""
@@ -822,7 +822,7 @@ msgstr ""
 #: inc/partials.php:31
 #: inc/partials.php:58
 #: inc/template-functions.php:115
-#: inc/template-functions.php:398
+#: inc/template-functions.php:411
 msgid "Read More"
 msgstr ""
 
@@ -932,7 +932,7 @@ msgstr ""
 
 #: inc/customizer/general.php:609
 #: inc/extras.php:679
-#: build/dashboard.js:6391
+#: build/dashboard.js:6930
 #: src/pages/index.js:16
 msgid "Home"
 msgstr ""
@@ -1057,7 +1057,7 @@ msgid "Recipe Index Section"
 msgstr ""
 
 #: inc/customizer/general.php:1046
-#: build/dashboard.js:5870
+#: build/dashboard.js:6409
 #: src/pages/Home/index.jsx:26
 msgid "Instagram Settings"
 msgstr ""
@@ -1144,7 +1144,7 @@ msgid "VIEW PRO THEME"
 msgstr ""
 
 #: inc/customizer/layout.php:15
-#: build/dashboard.js:5863
+#: build/dashboard.js:6402
 #: src/pages/Home/index.jsx:20
 msgid "Layout Settings"
 msgstr ""
@@ -1398,48 +1398,48 @@ msgstr ""
 msgid "sticky bar close"
 msgstr ""
 
-#: inc/template-functions.php:228
+#: inc/template-functions.php:241
 msgid "All Posts By "
 msgstr ""
 
-#: inc/template-functions.php:244
+#: inc/template-functions.php:257
 msgid "You Are Looking For"
 msgstr ""
 
-#: inc/template-functions.php:268
+#: inc/template-functions.php:281
 msgid "%1$s Showing %2$s %3$s Result(s) %4$s"
 msgstr ""
 
-#: inc/template-functions.php:379
+#: inc/template-functions.php:392
 msgid "Pages:"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-functions.php:414
+#: inc/template-functions.php:427
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/template-functions.php:444
+#: inc/template-functions.php:457
 msgid "About"
 msgstr ""
 
-#: inc/template-functions.php:486
+#: inc/template-functions.php:499
 msgid "Post Navigation"
 msgstr ""
 
-#: inc/template-functions.php:682
+#: inc/template-functions.php:695
 msgid " Blossom Recipe | Developed By "
 msgstr ""
 
-#: inc/template-functions.php:685
+#: inc/template-functions.php:698
 msgid " Powered by %s"
 msgstr ""
 
-#: inc/template-functions.php:685
+#: inc/template-functions.php:698
 msgid "https://wordpress.org/"
 msgstr ""
 
-#: inc/template-functions.php:714
+#: inc/template-functions.php:727
 msgid "got to top"
 msgstr ""
 
@@ -1748,7 +1748,7 @@ msgid "Upgrade message from the plugin author:"
 msgstr ""
 
 #: inc/tgmpa/class-tgm-plugin-activation.php:2867
-#: build/dashboard.js:6339
+#: build/dashboard.js:6878
 #: src/pages/UsefulPlugins/index.jsx:176
 msgid "Install"
 msgstr ""
@@ -1849,37 +1849,37 @@ msgid "Delicious Recipes – WordPress Recipe Plugin"
 msgstr ""
 
 #: inc/tgmpa/recommended-plugins.php:56
-#: build/dashboard.js:6189
+#: build/dashboard.js:6728
 #: src/pages/UsefulPlugins/index.jsx:12
 msgid "Delisho"
 msgstr ""
 
 #: inc/tgmpa/recommended-plugins.php:61
-#: build/dashboard.js:6193
+#: build/dashboard.js:6732
 #: src/pages/UsefulPlugins/index.jsx:17
 msgid "BlossomThemes Toolkit"
 msgstr ""
 
 #: inc/tgmpa/recommended-plugins.php:66
-#: build/dashboard.js:6197
+#: build/dashboard.js:6736
 #: src/pages/UsefulPlugins/index.jsx:22
 msgid "BlossomThemes Email Newsletter"
 msgstr ""
 
 #: inc/tgmpa/recommended-plugins.php:71
-#: build/dashboard.js:6213
+#: build/dashboard.js:6752
 #: src/pages/UsefulPlugins/index.jsx:42
 msgid "Smash Balloon Social Photo Feed"
 msgstr ""
 
 #: inc/tgmpa/recommended-plugins.php:76
-#: build/dashboard.js:6205
+#: build/dashboard.js:6744
 #: src/pages/UsefulPlugins/index.jsx:32
 msgid "Regenerate Thumbnails"
 msgstr ""
 
 #: inc/tgmpa/recommended-plugins.php:81
-#: build/dashboard.js:6201
+#: build/dashboard.js:6740
 #: src/pages/UsefulPlugins/index.jsx:27
 msgid "Contact Form 7"
 msgstr ""
@@ -2044,232 +2044,232 @@ msgstr ""
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: build/dashboard.js:5413
+#: build/dashboard.js:5952
 #: src/components/TabHeader/index.jsx:7
 msgid "View Website"
 msgstr ""
 
-#: build/dashboard.js:5417
+#: build/dashboard.js:5956
 #: src/components/TabHeader/index.jsx:12
 msgid "View Tutorials "
 msgstr ""
 
-#: build/dashboard.js:5421
+#: build/dashboard.js:5960
 #: src/components/TabHeader/index.jsx:17
 msgid "Contact Support"
 msgstr ""
 
-#: build/dashboard.js:5425
+#: build/dashboard.js:5964
 #: src/components/TabHeader/index.jsx:22
 msgid "Docs"
 msgstr ""
 
-#: build/dashboard.js:5489
-#: build/dashboard.js:5508
+#: build/dashboard.js:6028
+#: build/dashboard.js:6047
 #: src/components/Tab/index.jsx:13
 #: src/components/Tab/index.jsx:28
 msgid "Logo"
 msgstr ""
 
-#: build/dashboard.js:5490
+#: build/dashboard.js:6029
 #: src/components/Tab/index.jsx:14
 msgid "Blossom Recipe Pro"
 msgstr ""
 
-#: build/dashboard.js:5490
+#: build/dashboard.js:6029
 #: src/components/Tab/index.jsx:15
 msgid "Get access to all unlimited features."
 msgstr ""
 
-#: build/dashboard.js:5494
+#: build/dashboard.js:6033
 #: src/components/Tab/index.jsx:16
 msgid "Get Pro"
 msgstr ""
 
-#: build/dashboard.js:5694
+#: build/dashboard.js:6233
 #: src/pages/FAQ/index.jsx:8
 msgid "What is the difference between Free and Pro?"
 msgstr ""
 
-#: build/dashboard.js:5695
+#: build/dashboard.js:6234
 #: src/pages/FAQ/index.jsx:11
 msgid "Both Free and Pro version of the themes are well-built. However, the Pro version comes with many additional features."
 msgstr ""
 
-#: build/dashboard.js:5695
+#: build/dashboard.js:6234
 #: src/pages/FAQ/index.jsx:12
 msgid "With the Pro version, you can change the look and feel of your website in seconds. In just a few clicks, you can change the color and typography of your website. The premium version lets you have better control over the theme as it comes with more customization options. Not just that, the theme also has more sections and layout options as compared to the free version. The Pro version is multi-language compatible as well."
 msgstr ""
 
-#: build/dashboard.js:5697
+#: build/dashboard.js:6236
 #: src/pages/FAQ/index.jsx:13
 msgid "Overall, you will have more control over your website with the Pro version. You can find out more about the difference between Free and Pro versions %s."
 msgstr ""
 
-#: build/dashboard.js:5701
+#: build/dashboard.js:6240
 #: src/pages/FAQ/index.jsx:18
 msgid "What are the advantages of upgrading to the Premium version?"
 msgstr ""
 
-#: build/dashboard.js:5702
+#: build/dashboard.js:6241
 #: src/pages/FAQ/index.jsx:19
 msgid "With Premium version, besides the extra features and frequent updates, you get premium support. If you run into any theme issues, you will get a lot quicker response compared to the free support."
 msgstr ""
 
-#: build/dashboard.js:5704
+#: build/dashboard.js:6243
 #: src/pages/FAQ/index.jsx:22
 msgid "Upgrading to the Pro version- will I lose my changes?"
 msgstr ""
 
-#: build/dashboard.js:5705
+#: build/dashboard.js:6244
 #: src/pages/FAQ/index.jsx:25
 msgid "When you upgrade to the Pro theme, your posts, pages, media, categories, and other data will remain intact-- all your data is saved."
 msgstr ""
 
-#: build/dashboard.js:5705
+#: build/dashboard.js:6244
 #: src/pages/FAQ/index.jsx:26
 msgid "However, since the Pro version comes with added features and settings, you will need to set up the additional features in the customizer. This process is simple and only takes a few minutes."
 msgstr ""
 
-#: build/dashboard.js:5705
+#: build/dashboard.js:6244
 #: src/pages/FAQ/index.jsx:27
 msgid "The Pro version is built with lots of flexibility in mind for future upgrades. Therefore, it is slightly different than the free theme but extremely flexible and easy-to-use."
 msgstr ""
 
-#: build/dashboard.js:5707
+#: build/dashboard.js:6246
 #: src/pages/FAQ/index.jsx:32
 msgid "How do I change the copyright text?"
 msgstr ""
 
-#: build/dashboard.js:5710
+#: build/dashboard.js:6249
 #: src/pages/FAQ/index.jsx:34
 msgid "You can change the copyright text going to %1$s Appearance > Customize > Footer Settings. %2$s However, if you want to hide the author credit text, please %3$s."
 msgstr ""
 
-#: build/dashboard.js:5714
+#: build/dashboard.js:6253
 #: src/pages/FAQ/index.jsx:38
 msgid "Why is my theme not working well?"
 msgstr ""
 
-#: build/dashboard.js:5715
+#: build/dashboard.js:6254
 #: src/pages/FAQ/index.jsx:41
 msgid "If your customizer is not loading properly or you are having issues with the theme, it might be due to the plugin conflict."
 msgstr ""
 
-#: build/dashboard.js:5717
+#: build/dashboard.js:6256
 #: src/pages/FAQ/index.jsx:42
 msgid "To solve the issue, deactivate all the plugins first, except the ones recommended by the theme. Then, hard reload your website using %1$s \"Ctrl+Shift+R\" %2$s on Windows. If the issues are fixed, start activating the plugins one by one, and reload and check your site each time. This will help you find out the plugin that is causing the problem."
 msgstr ""
 
-#: build/dashboard.js:5721
+#: build/dashboard.js:6260
 #: src/pages/FAQ/index.jsx:43
 msgid "If this didn't help, please %s."
 msgstr ""
 
-#: build/dashboard.js:5725
+#: build/dashboard.js:6264
 #: src/pages/FAQ/index.jsx:48
 msgid "How can I solve my issues quickly and get faster support?"
 msgstr ""
 
-#: build/dashboard.js:5726
+#: build/dashboard.js:6265
 #: src/pages/FAQ/index.jsx:51
 msgid "Before you send us a support ticket for any issues, please make sure you have updated the theme to the latest version. We might have fixed the bug in the theme update."
 msgstr ""
 
-#: build/dashboard.js:5726
+#: build/dashboard.js:6265
 #: src/pages/FAQ/index.jsx:52
 msgid "When you submit the support ticket, please try to provide as much details as possible so that we can solve your problem faster. We recommend you to send us a screenshot(s) with issues explained and your website's address (URL). You can contact us "
 msgstr ""
 
-#: build/dashboard.js:5729
+#: build/dashboard.js:6268
 #: src/pages/FAQ/index.jsx:52
 msgid "here."
 msgstr ""
 
-#: build/dashboard.js:5729
+#: build/dashboard.js:6268
 #: src/pages/FAQ/index.jsx:53
 msgid "Also, you might experience a slower response time during the weekend, so please bear with us."
 msgstr ""
 
-#: build/dashboard.js:5784
-#: build/dashboard.js:5930
+#: build/dashboard.js:6323
+#: build/dashboard.js:6469
 #: src/pages/FreePro/index.jsx:9
 #: src/pages/Home/index.jsx:97
 msgid "We Value Your Feedback!"
 msgstr ""
 
-#: build/dashboard.js:5786
-#: build/dashboard.js:5932
+#: build/dashboard.js:6325
+#: build/dashboard.js:6471
 #: src/pages/FreePro/index.jsx:11
 #: src/pages/Home/index.jsx:99
 msgid "Your review helps us improve and assists others in making informed choices. Share your thoughts today!"
 msgstr ""
 
-#: build/dashboard.js:5790
-#: build/dashboard.js:5936
+#: build/dashboard.js:6329
+#: build/dashboard.js:6475
 #: src/pages/FreePro/index.jsx:13
 #: src/pages/Home/index.jsx:101
 msgid "Leave a Review"
 msgstr ""
 
-#: build/dashboard.js:5793
-#: build/dashboard.js:5939
+#: build/dashboard.js:6332
+#: build/dashboard.js:6478
 #: src/pages/FreePro/index.jsx:17
 #: src/pages/Home/index.jsx:105
 msgid "Knowledge Base"
 msgstr ""
 
-#: build/dashboard.js:5794
-#: build/dashboard.js:5940
+#: build/dashboard.js:6333
+#: build/dashboard.js:6479
 #: src/pages/FreePro/index.jsx:18
 #: src/pages/Home/index.jsx:106
 msgid "Need help using our theme? Visit our well-organized Knowledge Base!"
 msgstr ""
 
-#: build/dashboard.js:5798
-#: build/dashboard.js:5944
+#: build/dashboard.js:6337
+#: build/dashboard.js:6483
 #: src/pages/FreePro/index.jsx:20
 #: src/pages/Home/index.jsx:108
 msgid "Explore"
 msgstr ""
 
-#: build/dashboard.js:5801
-#: build/dashboard.js:5947
+#: build/dashboard.js:6340
+#: build/dashboard.js:6486
 #: src/pages/FreePro/index.jsx:24
 #: src/pages/Home/index.jsx:112
 msgid "Need Assistance? "
 msgstr ""
 
-#: build/dashboard.js:5802
-#: build/dashboard.js:5948
+#: build/dashboard.js:6341
+#: build/dashboard.js:6487
 #: src/pages/FreePro/index.jsx:25
 #: src/pages/Home/index.jsx:113
 msgid "If you need help or have any questions, don't hesitate to contact our support team. We're here to assist you!"
 msgstr ""
 
-#: build/dashboard.js:5806
-#: build/dashboard.js:5952
+#: build/dashboard.js:6345
+#: build/dashboard.js:6491
 #: src/pages/FreePro/index.jsx:27
 #: src/pages/Home/index.jsx:115
 msgid "Submit a Ticket"
 msgstr ""
 
-#: build/dashboard.js:5816
+#: build/dashboard.js:6355
 #: src/pages/FreePro/index.jsx:35
 msgid "Free vs Pro image"
 msgstr ""
 
-#: build/dashboard.js:5849
+#: build/dashboard.js:6388
 #: src/pages/Home/index.jsx:8
 msgid "Site Identity"
 msgstr ""
 
-#: build/dashboard.js:5850
-#: build/dashboard.js:5857
-#: build/dashboard.js:5864
-#: build/dashboard.js:5871
-#: build/dashboard.js:5878
-#: build/dashboard.js:5885
+#: build/dashboard.js:6389
+#: build/dashboard.js:6396
+#: build/dashboard.js:6403
+#: build/dashboard.js:6410
+#: build/dashboard.js:6417
+#: build/dashboard.js:6424
 #: src/pages/Home/index.jsx:9
 #: src/pages/Home/index.jsx:15
 #: src/pages/Home/index.jsx:21
@@ -2279,29 +2279,29 @@ msgstr ""
 msgid "Customize"
 msgstr ""
 
-#: build/dashboard.js:5856
+#: build/dashboard.js:6395
 #: src/pages/Home/index.jsx:14
 msgid "Color Settings"
 msgstr ""
 
-#: build/dashboard.js:5889
+#: build/dashboard.js:6428
 #: src/pages/Home/index.jsx:46
 msgid "Header Layouts"
 msgstr ""
 
-#: build/dashboard.js:5890
+#: build/dashboard.js:6429
 #: src/pages/Home/index.jsx:47
 msgid "Choose from different unique header layouts."
 msgstr ""
 
-#: build/dashboard.js:5891
-#: build/dashboard.js:5896
-#: build/dashboard.js:5901
-#: build/dashboard.js:5906
-#: build/dashboard.js:5911
-#: build/dashboard.js:5916
-#: build/dashboard.js:5921
-#: build/dashboard.js:5926
+#: build/dashboard.js:6430
+#: build/dashboard.js:6435
+#: build/dashboard.js:6440
+#: build/dashboard.js:6445
+#: build/dashboard.js:6450
+#: build/dashboard.js:6455
+#: build/dashboard.js:6460
+#: build/dashboard.js:6465
 #: src/pages/Home/index.jsx:48
 #: src/pages/Home/index.jsx:54
 #: src/pages/Home/index.jsx:60
@@ -2313,264 +2313,264 @@ msgstr ""
 msgid "Learn More"
 msgstr ""
 
-#: build/dashboard.js:5894
+#: build/dashboard.js:6433
 #: src/pages/Home/index.jsx:52
 msgid "Multiple Layouts"
 msgstr ""
 
-#: build/dashboard.js:5895
+#: build/dashboard.js:6434
 #: src/pages/Home/index.jsx:53
 msgid "Choose layouts for blogs, banners, posts and more."
 msgstr ""
 
-#: build/dashboard.js:5899
+#: build/dashboard.js:6438
 #: src/pages/Home/index.jsx:58
 msgid "Multiple Sidebar"
 msgstr ""
 
-#: build/dashboard.js:5900
+#: build/dashboard.js:6439
 #: src/pages/Home/index.jsx:59
 msgid "Set different sidebars for posts and pages."
 msgstr ""
 
-#: build/dashboard.js:5905
+#: build/dashboard.js:6444
 #: src/pages/Home/index.jsx:65
 msgid "Show a notice or newsletter at the top."
 msgstr ""
 
-#: build/dashboard.js:5909
+#: build/dashboard.js:6448
 #: src/pages/Home/index.jsx:70
 msgid "Boost your website performance with ease."
 msgstr ""
 
-#: build/dashboard.js:5910
+#: build/dashboard.js:6449
 #: src/pages/Home/index.jsx:71
 msgid "Performance Settings"
 msgstr ""
 
-#: build/dashboard.js:5914
+#: build/dashboard.js:6453
 #: src/pages/Home/index.jsx:76
 msgid "Choose typography for different heading tags."
 msgstr ""
 
-#: build/dashboard.js:5915
+#: build/dashboard.js:6454
 #: src/pages/Home/index.jsx:77
 msgid "Typography Settings"
 msgstr ""
 
-#: build/dashboard.js:5919
+#: build/dashboard.js:6458
 #: src/pages/Home/index.jsx:82
 msgid "Import the demo content to kickstart your site."
 msgstr ""
 
-#: build/dashboard.js:5920
-#: build/dashboard.js:6145
+#: build/dashboard.js:6459
+#: build/dashboard.js:6684
 #: src/pages/Home/index.jsx:83
 #: src/pages/StarterSites/index.jsx:30
 msgid "One Click Demo Import"
 msgstr ""
 
-#: build/dashboard.js:5924
+#: build/dashboard.js:6463
 #: src/pages/Home/index.jsx:88
 msgid "Easily place ads on high conversion areas."
 msgstr ""
 
-#: build/dashboard.js:5925
+#: build/dashboard.js:6464
 #: src/pages/Home/index.jsx:89
 msgid "Advertisement Settings"
 msgstr ""
 
-#: build/dashboard.js:5963
+#: build/dashboard.js:6502
 #: src/pages/Home/index.jsx:126
 msgid "Blossom Recipe Tutorial"
 msgstr ""
 
-#: build/dashboard.js:5965
+#: build/dashboard.js:6504
 #: src/pages/Home/index.jsx:128
 msgid "How to Start Your First Food Blog In 2023 | Blossom Recipe Free WordPress Theme"
 msgstr ""
 
-#: build/dashboard.js:5971
+#: build/dashboard.js:6510
 #: src/pages/Home/index.jsx:131
 msgid "Quick Customizer Settings"
 msgstr ""
 
-#: build/dashboard.js:5972
-#: build/dashboard.js:5981
+#: build/dashboard.js:6511
+#: build/dashboard.js:6520
 #: src/pages/Home/index.jsx:132
 #: src/pages/Home/index.jsx:143
 msgid "Go To Customizer"
 msgstr ""
 
-#: build/dashboard.js:5980
+#: build/dashboard.js:6519
 #: src/pages/Home/index.jsx:142
 msgid "More features with Pro version"
 msgstr ""
 
-#: build/dashboard.js:5994
+#: build/dashboard.js:6533
 #: src/pages/Home/index.jsx:153
 msgid "Learn more about the Pro version"
 msgstr ""
 
-#: build/dashboard.js:6025
+#: build/dashboard.js:6564
 #: src/pages/Offers/index.jsx:9
 msgid "Theme Club"
 msgstr ""
 
-#: build/dashboard.js:6029
+#: build/dashboard.js:6568
 #: src/pages/Offers/index.jsx:14
 msgid "Sales Funnel"
 msgstr ""
 
-#: build/dashboard.js:6033
+#: build/dashboard.js:6572
 #: src/pages/Offers/index.jsx:19
 msgid "Custom Fonts"
 msgstr ""
 
-#: build/dashboard.js:6037
+#: build/dashboard.js:6576
 #: src/pages/Offers/index.jsx:24
 msgid "VIP Site Care"
 msgstr ""
 
-#: build/dashboard.js:6042
+#: build/dashboard.js:6581
 #: src/pages/Offers/index.jsx:32
 msgid "Theme Installation & Setup"
 msgstr ""
 
-#: build/dashboard.js:6046
+#: build/dashboard.js:6585
 #: src/pages/Offers/index.jsx:37
 msgid "GDPR Compliance"
 msgstr ""
 
-#: build/dashboard.js:6050
+#: build/dashboard.js:6589
 #: src/pages/Offers/index.jsx:42
 msgid "Must Have SEO Setup"
 msgstr ""
 
-#: build/dashboard.js:6054
+#: build/dashboard.js:6593
 #: src/pages/Offers/index.jsx:47
 msgid "Must Have Plugins Setup"
 msgstr ""
 
-#: build/dashboard.js:6058
+#: build/dashboard.js:6597
 #: src/pages/Offers/index.jsx:52
 msgid "VIP Support"
 msgstr ""
 
-#: build/dashboard.js:6117
-#: build/dashboard.js:6127
-#: build/dashboard.js:6137
+#: build/dashboard.js:6656
+#: build/dashboard.js:6666
+#: build/dashboard.js:6676
 #: src/pages/StarterSites/index.jsx:11
 #: src/pages/StarterSites/index.jsx:17
 #: src/pages/StarterSites/index.jsx:23
 msgid "Demo image"
 msgstr ""
 
-#: build/dashboard.js:6122
-#: build/dashboard.js:6132
-#: build/dashboard.js:6142
+#: build/dashboard.js:6661
+#: build/dashboard.js:6671
+#: build/dashboard.js:6681
 #: src/pages/StarterSites/index.jsx:13
 #: src/pages/StarterSites/index.jsx:19
 #: src/pages/StarterSites/index.jsx:25
 msgid "Demo reverse image"
 msgstr ""
 
-#: build/dashboard.js:6147
+#: build/dashboard.js:6686
 #: src/pages/StarterSites/index.jsx:31
 msgid "Get started effortlessly! Use our one-click demo import feature to set up your site instantly with all the sample data and settings. Please note that importing demo content will overwrite your existing site content and settings. %s Not recommended if you have existing content. %s"
 msgstr ""
 
-#: build/dashboard.js:6155
+#: build/dashboard.js:6694
 #: src/pages/StarterSites/index.jsx:34
 msgid "Get Starter Sites"
 msgstr ""
 
-#: build/dashboard.js:6185
+#: build/dashboard.js:6724
 #: src/pages/UsefulPlugins/index.jsx:7
 msgid "WP Delicious – Best WordPress Recipe Plugin"
 msgstr ""
 
-#: build/dashboard.js:6186
+#: build/dashboard.js:6725
 #: src/pages/UsefulPlugins/index.jsx:8
 msgid "A powerful recipe plugin to create and display recipes for bloggers. SEO optimized and Schema-friendly to rank recipes higher on search engines."
 msgstr ""
 
-#: build/dashboard.js:6190
+#: build/dashboard.js:6729
 #: src/pages/UsefulPlugins/index.jsx:13
 msgid "An Elementor Widget and Gutenberg Blocks plugin for WP Delicious that include 10+ widgets and 4 Gutenberg blocks to create beautiful and interactive recipe blogs with a quick drag-and-drop."
 msgstr ""
 
-#: build/dashboard.js:6194
+#: build/dashboard.js:6733
 #: src/pages/UsefulPlugins/index.jsx:18
 msgid "BlossomThemes Toolkit provides you necessary widgets for better and effective blogging."
 msgstr ""
 
-#: build/dashboard.js:6198
+#: build/dashboard.js:6737
 #: src/pages/UsefulPlugins/index.jsx:23
 msgid "Easily add email subscription form to your website using shortcode and widget."
 msgstr ""
 
-#: build/dashboard.js:6202
+#: build/dashboard.js:6741
 #: src/pages/UsefulPlugins/index.jsx:28
 msgid "Just another contact form plugin. Simple but flexible."
 msgstr ""
 
-#: build/dashboard.js:6206
+#: build/dashboard.js:6745
 #: src/pages/UsefulPlugins/index.jsx:33
 msgid "Regenerate the thumbnails for one or more of your image uploads. Useful when changing their sizes or your theme."
 msgstr ""
 
-#: build/dashboard.js:6209
+#: build/dashboard.js:6748
 #: src/pages/UsefulPlugins/index.jsx:37
 msgid "AffiliateX – Best Amazon Affiliate WordPress Plugin"
 msgstr ""
 
-#: build/dashboard.js:6210
+#: build/dashboard.js:6749
 #: src/pages/UsefulPlugins/index.jsx:38
 msgid "Create a professional-looking affiliate websites with highly customizable blocks that help in increasing the conversion rate and boost your affiliate income."
 msgstr ""
 
-#: build/dashboard.js:6214
+#: build/dashboard.js:6753
 #: src/pages/UsefulPlugins/index.jsx:43
 msgid "Formerly 'Instagram Feed'. Display clean, customizable, and responsive Instagram feeds from multiple accounts. Supports Instagram oEmbeds."
 msgstr ""
 
-#: build/dashboard.js:6342
+#: build/dashboard.js:6881
 #: src/pages/UsefulPlugins/index.jsx:181
 msgid "Installing..."
 msgstr ""
 
-#: build/dashboard.js:6348
+#: build/dashboard.js:6887
 #: src/pages/UsefulPlugins/index.jsx:191
 msgid "Activating..."
 msgstr ""
 
-#: build/dashboard.js:6351
+#: build/dashboard.js:6890
 #: src/pages/UsefulPlugins/index.jsx:196
 msgid "Activated"
 msgstr ""
 
-#: build/dashboard.js:6397
+#: build/dashboard.js:6936
 #: src/pages/index.js:21
 msgid "Starter Sites"
 msgstr ""
 
-#: build/dashboard.js:6403
+#: build/dashboard.js:6942
 #: src/pages/index.js:26
 msgid "Free vs Pro"
 msgstr ""
 
-#: build/dashboard.js:6409
+#: build/dashboard.js:6948
 #: src/pages/index.js:31
 msgid "Offers"
 msgstr ""
 
-#: build/dashboard.js:6415
+#: build/dashboard.js:6954
 #: src/pages/index.js:36
 msgid "FAQs"
 msgstr ""
 
-#: build/dashboard.js:6421
+#: build/dashboard.js:6960
 #: src/pages/index.js:41
 msgid "Useful Plugins"
 msgstr ""

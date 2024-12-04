@@ -198,7 +198,20 @@ if( ! function_exists( 'blossom_recipe_content_start' ) ) :
 */
 function blossom_recipe_content_start(){
 
-    if ( ! is_front_page() && ! is_home() ) blossom_recipe_breadcrumb();
+    if ( ! is_front_page() && ! is_home() ) {
+        $delicious_settings = get_option('delicious_recipe_settings');
+        $banner_style = $delicious_settings && isset($delicious_settings['selectedBannerLayout']['id']) ? $delicious_settings['selectedBannerLayout']['id'] : 'default';
+        if( function_exists( 'DEL_RECIPE_PRO' ) 
+            && version_compare( DELICIOUS_RECIPES_PRO_VERSION, '2.2.2', '>' ) 
+            && $banner_style !== 'default' 
+        ) {
+            if( !is_singular( 'recipe' ) ) {
+                blossom_recipe_breadcrumb();
+            }
+        } else {
+            blossom_recipe_breadcrumb(); 
+        }
+    }
 
     $background_image  = '';
     if( is_archive() ){
@@ -214,7 +227,7 @@ function blossom_recipe_content_start(){
     ?>
     <div id="content" class="site-content">
         <?php if( ! is_page_template( $template ) && ! blossom_recipe_is_elementor_activated_post() ){ ?>
-            <header class="page-header<?php echo ( $background_image ) ? ' has-bg' : ''; ?>"<?php echo $background_image; ?>>
+            <section class="page-header<?php echo ( $background_image ) ? ' has-bg' : ''; ?>"<?php echo $background_image; ?>>
                 <div class="container">
         			<?php
                         
@@ -250,7 +263,7 @@ function blossom_recipe_content_start(){
                         }
                     ?>
                 </div>
-    		</header>
+    		</section>
         <?php } ?>
         <div class="container">
         <?php
