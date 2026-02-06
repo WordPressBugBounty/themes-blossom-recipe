@@ -34,36 +34,47 @@ function blossom_recipe_add_sidebar_layout_box(){
 }
 add_action( 'add_meta_boxes', 'blossom_recipe_add_sidebar_layout_box' );
 
-$blossom_recipe_sidebar_layout = array(    
-    'default-sidebar'=> array(
-    	 'value'     => 'default-sidebar',
-    	 'label'     => __( 'Default Sidebar', 'blossom-recipe' ),
-    	 'thumbnail' => esc_url( get_template_directory_uri() . '/images/default-sidebar.png' ),
-   	),
-    'no-sidebar'     => array(
-    	 'value'     => 'no-sidebar',
-    	 'label'     => __( 'Full Width', 'blossom-recipe' ),
-    	 'thumbnail' => esc_url( get_template_directory_uri() . '/images/full-width.png' ),
-   	),  
-    'centered'     => array(
-    	 'value'     => 'centered',
-    	 'label'     => __( 'Full Width Centered', 'blossom-recipe' ),
-    	 'thumbnail' => esc_url( get_template_directory_uri() . '/images/full-width-centered.png' ),
-   	),         
-    'left-sidebar' => array(
-         'value'     => 'left-sidebar',
-    	 'label'     => __( 'Left Sidebar', 'blossom-recipe' ),
-    	 'thumbnail' => esc_url( get_template_directory_uri() . '/images/left-sidebar.png' ),         
-    ),
-    'right-sidebar' => array(
-         'value'     => 'right-sidebar',
-    	 'label'     => __( 'Right Sidebar', 'blossom-recipe' ),
-    	 'thumbnail' => esc_url( get_template_directory_uri() . '/images/right-sidebar.png' ),         
-     )    
-);
+
+/**
+ * Get Sidebar Layout Data
+ *
+ * @return array
+ */
+if( ! function_exists( 'blossom_recipe_get_sidebar_layout_data' ) ){
+    function blossom_recipe_get_sidebar_layout_data(){
+        return array(
+           'default-sidebar'=> array(
+                'value'     => 'default-sidebar',
+                'label'     => __( 'Default Sidebar', 'blossom-recipe' ),
+                'thumbnail' => esc_url( get_template_directory_uri() . '/images/default-sidebar.png' ),
+            ),
+            'no-sidebar'     => array(
+                'value'     => 'no-sidebar',
+                'label'     => __( 'Full Width', 'blossom-recipe' ),
+                'thumbnail' => esc_url( get_template_directory_uri() . '/images/full-width.png' ),
+            ),  
+            'centered'     => array(
+                'value'     => 'centered',
+                'label'     => __( 'Full Width Centered', 'blossom-recipe' ),
+                'thumbnail' => esc_url( get_template_directory_uri() . '/images/full-width-centered.png' ),
+            ),         
+            'left-sidebar' => array(
+                'value'     => 'left-sidebar',
+                'label'     => __( 'Left Sidebar', 'blossom-recipe' ),
+                'thumbnail' => esc_url( get_template_directory_uri() . '/images/left-sidebar.png' ),         
+            ),
+            'right-sidebar' => array(
+                'value'     => 'right-sidebar',
+                'label'     => __( 'Right Sidebar', 'blossom-recipe' ),
+                'thumbnail' => esc_url( get_template_directory_uri() . '/images/right-sidebar.png' ),         
+            )    
+        );
+    }
+}
 
 function blossom_recipe_sidebar_layout_callback(){
-    global $post , $blossom_recipe_sidebar_layout;
+    global $post;
+    $blossom_recipe_sidebar_layout =blossom_recipe_get_sidebar_layout_data();
     wp_nonce_field( basename( __FILE__ ), 'blossom_recipe_nonce' ); ?> 
     <table class="form-table">
         <tr>
@@ -91,7 +102,8 @@ function blossom_recipe_sidebar_layout_callback(){
 }
 
 function blossom_recipe_save_sidebar_layout( $post_id ){
-    global $blossom_recipe_sidebar_layout , $post;
+
+    $blossom_recipe_sidebar_layout =blossom_recipe_get_sidebar_layout_data();
 
     // Verify the nonce before proceeding.
     if ( !isset( $_POST[ 'blossom_recipe_nonce' ] ) || !wp_verify_nonce( $_POST[ 'blossom_recipe_nonce' ], basename( __FILE__ ) ) )
